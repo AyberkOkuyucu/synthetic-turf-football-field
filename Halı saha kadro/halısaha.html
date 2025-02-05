@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halı Saha Takım Kurma</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="header-container">
+        Halı Saha Takım Kurma
+    </div>
+    <!-- Mevcut içerik -->
+    <div class="saha" id="saha">
+        <div class="line center-line"></div>
+        <div class="line goal-line goal-top" style="background-color: white; top: 0 ;"></div>
+        <div class="line goal-line goal-bottom" style="background-color: white; bottom: 0;"></div>
+        <div class="circle"></div>
+        <div class="background-image"></div>
+
+        <div class="button-container" >
+            <button id="distributeNamesButton" >Rastgele İsim Dağıt</button>
+            <button id="resetButton">Sıfırla</button>
+        </div>
+        <div class="goal-area-left"></div>
+        <div class="goal-area-right"></div>
+        <div class="penalty-spot-left"></div>
+        <div class="penalty-spot-right"></div>
+        <div class="center-spot"></div>
+        <!-- Ceza Sahası -->
+        <ul>
+            <ul>
+                <li><a href="#" onclick="redirectTo('https://www.tiktok.com')"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#" onclick="redirectTo('https://twitter.com')"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#" onclick="redirectTo('https://www.instagram.com')"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" onclick="redirectTo('https://web.whatsapp.com')"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+            
+        </ul>
+        <button class="screenshot-button" onclick="captureScreenshot()">Ekran görüntüsü</button>
+        
+
+        <div class="penalty-area"></div>
+        <div class="penalty-area2"></div>
+        <!-- A Takımı (Kırmızı) -->
+        <div class="player" id="player-1" style="top: 0%; left: 47%;" draggable="true">
+            <div class="box red">K</div>
+            <div class="name">Kaleci</div>
+        </div>
+        <div class="player" id="player-2" style="top: 10%; left: 31%;" draggable="true">
+            <div class="box red">D</div>
+            <div class="name">Defans</div>
+        </div>
+        <div class="player" id="player-3" style="top: 10%; left: 63%;" draggable="true">
+            <div class="box red">D</div>
+            <div class="name">Defans</div>
+        </div>
+        <div class="player" id="player-4" style="top: 20%; left: 21%;" draggable="true">
+            <div class="box red">M</div>
+            <div class="name">Orta Saha</div>
+        </div>
+        <div class="player" id="player-5" style="top: 20%; left: 46%;" draggable="true">
+            <div class="box red">M</div>
+            <div class="name">Orta Saha</div>
+        </div>
+        <div class="player" id="player-6" style="top: 20%; left: 71%;" draggable="true">
+            <div class="box red">M</div>
+            <div class="name">Orta Saha</div>
+        </div>
+        <div class="player" id="player-7" style="top: 35%; left: 47%;" draggable="true">
+            <div class="box red">F</div>
+            <div class="name">Forvet</div>
+        </div>
+    
+        <!-- B Takımı (sarı) -->
+        <div class="player" id="player-8" style="top: 94%; left: 47%;" draggable="true">
+            <div class="box yellow">K</div>
+            <div class="name">Kaleci</div>
+        </div>
+        <div class="player" id="player-9" style="top: 80%; left: 31%;" draggable="true">
+            <div class="box yellow">D</div>
+            <div class="name">Defans</div>
+        </div>
+        <div class="player" id="player-10" style="top: 80%; left: 63%;" draggable="true">
+            <div class="box yellow">D</div>
+            <div class="name">Defans</div>
+        </div>
+        <div class="player" id="player-11" style="top: 70%; left: 21%;" draggable="true">
+            <div class="box yellow">M</div>
+            <div class="name">Orta Saha</div>
+        </div>
+        <div class="player" id="player-12" style="top: 70%; left: 46%;" draggable="true">
+            <div class="box yellow">M</div>
+            <div class="name">Orta Saha</div>
+        </div>
+        <div class="player" id="player-13" style="top: 70%; left: 71%;" draggable="true">
+            <div class="box yellow">M</div>
+            <div class="name">Orta Saha</div>
+        </div>
+        <div class="player" id="player-14" style="top: 60%; left: 47%;" draggable="true">
+            <div class="box yellow">F</div>
+            <div class="name">Forvet</div>
+        </div>
+    
+        <!-- A Kategorisi -->
+        <div class="category category-a">
+            <div class="category-item">
+                <span class="category-label">1.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+            <div class="category-item">
+                <span class="category-label">2.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+            <div class="category-item">
+                <span class="category-label">3.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+            <div class="category-item">
+                <span class="category-label">4.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+            <div class="category-item">
+                <span class="category-label">5.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+            <div class="category-item">
+                <span class="category-label">6.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+            <div class="category-item">
+                <span class="category-label">7.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+        </div>
+    
+        <!-- B Kategorisi -->
+        <div class="category category-b">
+            <div class="category-item">
+                <span class="category-label">1.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+            <div class="category-item">
+                <span class="category-label">2.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+            <div class="category-item">
+                <span class="category-label">3.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+            <div class="category-item">
+                <span class="category-label">4.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+            <div class="category-item">
+                <span class="category-label">5.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+            <div class="category-item">
+                <span class="category-label">6.</span>
+                <input type="text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+            <div class="category-item">
+                <span class="category-label">7.</span>
+                <input type=" text" class="category-box" placeholder="İsim">
+                <button class="small-clear-button">X</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
