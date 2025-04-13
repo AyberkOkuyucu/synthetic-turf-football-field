@@ -51,3 +51,4 @@ Ses efektleri / takım renkleri seçimi
 
 👨‍💻 Katkı ve Geri Bildirim
 Bu proje öğrenme ve gelişim amacıyla yapılmıştır. Geri bildirimlerin ve önerilerin benim için çok değerli. Geliştirmeye açık bir projedir.
+![Ekran görüntüsü 2025-04-14 004115](https://github.com/user-attachments/assets/52d079c1-4507-44c4-ae59-ac67a317acde)
